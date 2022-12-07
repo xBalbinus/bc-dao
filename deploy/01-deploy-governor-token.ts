@@ -10,7 +10,7 @@ const deployGovernanceToken: DeployFunction = async function (hre: HardhatRuntim
   const { deploy, log } = deployments
   const { deployer } = await getNamedAccounts()
   log("----------------------------------------------------")
-  log("Deploying GovernanceToken and waiting for confirmations...")
+  log("Deploying BC DAO Token and waiting for confirmations...")
   const governanceToken = await deploy("GovernanceToken", {
     from: deployer,
     args: [],
